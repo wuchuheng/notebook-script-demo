@@ -6,7 +6,9 @@
   "scripts": {
     "start": "nodemon src/index.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "pretty-print-json": "^1.1.0"
+  },
   "devDependencies": {
     "nodemon": "1.18.4"
   },

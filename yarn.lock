@@ -1031,6 +1031,11 @@ prepend-http@^1.0.1:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
 
+pretty-print-json@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.nlark.com/pretty-print-json/download/pretty-print-json-1.1.0.tgz#a2dcf44f79f376b7cce0dfdd05fbb5070b87eb67"
+  integrity sha1-otz0T3nzdrfM4N/dBfu1BwuH62c=
+
 process-nextick-args@~2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.0.tgz#a37d732f4271b4ab1ad070d35508e8290788ffaa"

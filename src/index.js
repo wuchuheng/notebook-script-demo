@@ -1,4 +1,6 @@
-var http = require("http");
+const http = require("http");
+const { prettyPrintJson } = require('pretty-print-json');  //deprecated
+
 const pidMapNode = {};
 const nodes = [
   { pid: 0, id: 1, content: "0-1" },
@@ -18,10 +20,18 @@ nodes.forEach((item) => {
 });
 
 console.info(tree);
-//create a server object:
+const html = prettyPrintJson.toHtml(tree);
+
 http
-  .createServer(function (req, res) {
-    res.write("hello wuchuheng"); //write a response to the client
-    res.end(); //end the response
-  })
-  .listen(8080); //the server object listens on port 8080
+    .createServer(function (req, res) {
+        res.write(
+            `<!doctype html>
+             <html lang="en">
+                <body>
+                    <pre>${html}</pre>
+                </body>
+            <html/>`
+        ); //write a response to the client
+        res.end(); //end the response
+    })
+    .listen(8082); //the server object listens on port 8080
